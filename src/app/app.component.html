@@ -3,30 +3,35 @@
         <div class="logo">
             <h2>Ganesh Arulmozhivarman</h2>
         </div>
-        <div class="link" fxHide=true>
+        <div class="link" fxHide.lt-sm=true>
             <ul>
-                <li><a href="#" class="active">About</a></li>
+                <li><a href="#" class="active" (click)="redirect()">About</a></li>
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Experience</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
-       <div>
-        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-        <mat-menu #menu="matMenu">
-            <button mat-menu-item>Item 1</button>
-            <button mat-menu-item>Item 2</button>
-        </mat-menu>
-       </div>
+        <div fxHide.gt-xs=true>
+            <button mat-button [matMenuTriggerFor]="menu"><i class='bx bx-menu'></i></button>
+            <mat-menu #menu="matMenu" class="menuitem">
+
+                <button mat-menu-item><a href="#" class="matbutton"> About </a></button>
+                <button mat-menu-item><a href="#" class="matbutton"> Work</a></button>
+                <button mat-menu-item><a href="#" class="matbutton"> Experience</a></button>
+                <button mat-menu-item><a href="#" class="matbutton"> Contact</a></button>
+
+            </mat-menu>
+        </div>
 
     </div>
 
-    <div class="main">
+    <div class="main" fxLayout.lt-sm="column" *ngIf='!about'>
         <img src="../assets/profile1.png" alt="men" class="men">
         <div class="main-detil">
             <p>Hello i'm</p>
-            <h1>Ganesh Arulmozhivarman</h1>
-            <h4>Frontend Developer</h4>
+            <h1 class="my-class" fxHide.lt-sm=true>Ganesh Arulmozhivarman</h1>
+            <h1 class="my-class1" fxHide.gt-xs=true>Ganesh Arulmozhivarman</h1>
+            <h4>Software Engineer</h4>
 
             <div class="btn">
                 <button type="submit">Download CV</button>
@@ -47,7 +52,46 @@
             </div>
         </div>
     </div>
-    <!-- <div class="sub-btn">
-      <a href="https://www.youtube.com/channel/UCUuyUTlJcHzZJJeYpYhUI-Q/">SUBSCRIBE</a>
-  </div> -->
+
+
+    <div class="about" fxLayout="column" *ngIf='about'>
+        <div >
+            <h2>About Me</h2>
+        </div>
+        <div>
+            <img src="../assets/profile1.png" alt="men" class="abtpic">
+        </div>
+        <div style="width: 50%;">
+            <p> As an Angular Developer, I thrive on building cutting-edge user interfaces,
+                optimizing performance, and pushing the boundaries of modern web
+                development.  Able to effectively self-manage during independent
+                projects, as well as collaborate as part of a productive team. Let's join
+                forces and take your digital experiences to the next level!"</p>
+            <!-- <h1 class="my-class" fxHide.lt-sm=true>Ganesh Arulmozhivarman</h1>
+            <h1 class="my-class1" fxHide.gt-xs=true>Ganesh Arulmozhivarman</h1>
+            <h4>Software Engineer</h4> -->
+
+            <!-- <div class="btn">
+                <button type="submit">Download CV</button>
+                <button type="submit" class="btn-2">Hire Me</button>
+            </div>
+
+            <div class="social">
+                <i class='bx bxl-github'></i>
+                <i class='bx bxl-instagram'></i>
+            </div>
+            <div class="social">
+                <i class='bx bxl-angular'></i>
+                <i class='bx bxl-typescript'></i>
+                <i class='bx bxl-javascript'></i>
+                <i class='bx bxl-html5'></i>
+                <i class='bx bxl-css3'></i>
+                <i class='bx bxl-instagram'></i>
+            </div> -->
+        </div>
+    </div>
+
+
+
+
 </div>

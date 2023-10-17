@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'GaneshProfile';
+  about:boolean=false;
+
+  redirect(){
+    console.log(this.about)
+    this.about = !this.about
+  }
 }
