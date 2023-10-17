@@ -1,12 +1,12 @@
 <div class="hero">
     <div class="nav">
         <div class="logo">
-            <h2>Ganesh Arulmozhivarman</h2>
+            <h2 (click)="redirect(0)">Ganesh Arulmozhivarman</h2>
         </div>
         <div class="link" fxHide.lt-sm=true>
             <ul>
-                <li><a href="#" class="active" (click)="redirect()">About</a></li>
-                <li><a href="#">Work</a></li>
+                <li><a href="#" class="active" (click)="redirect(1)">About</a></li>
+                <li><a href="#" (click)="redirect(2)">Work</a></li>
                 <li><a href="#">Experience</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -25,8 +25,8 @@
 
     </div>
 
-    <div class="main" fxLayout.lt-sm="column" *ngIf='!about'>
-        <img src="../assets/profile1.png" alt="men" class="men">
+    <div class="main" fxLayout.lt-sm="column" *ngIf='main'>
+        <img src="../assets/profile2.png" alt="men" class="men">
         <div class="main-detil">
             <p>Hello i'm</p>
             <h1 class="my-class" fxHide.lt-sm=true>Ganesh Arulmozhivarman</h1>
@@ -35,11 +35,11 @@
 
             <div class="btn">
                 <button type="submit">Download CV</button>
-                <button type="submit" class="btn-2">Hire Me</button>
+                <button type="submit" class="btn-2">Connect</button>
             </div>
 
             <div class="social">
-                <i class='bx bxl-github'></i>
+                <a href="https://github.com/Ganesharulmozhivarman"><i class='bx bxl-github'></i></a>
                 <i class='bx bxl-instagram'></i>
             </div>
             <div class="social">
@@ -91,7 +91,10 @@
         </div>
     </div>
 
+    <div class="certificate" *ngIf='certificate'>
+        <img src="https://i.ibb.co/Qc14tLF/Guvi-Certification-N1ae9744560218f-Zm-S.png" alt="angular certificate" class="cert_img">
 
+    </div>
 
 
 </div>
