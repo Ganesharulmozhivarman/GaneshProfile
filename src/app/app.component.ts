@@ -12,30 +12,57 @@ export class AppComponent {
   about: boolean = false;
   main: boolean = true;
   certificate: boolean = false;
-
+  experience: boolean = false;
+  contact: boolean = false;
+  Loading:boolean=false;
+  
   redirect(id: number) {
 
     switch (id) {
       case 0:{
-        console.log(this.about)
         this.about = false;
         this.main = true;
         this.certificate = false;
+        this.experience = false;
+        this.contact = false;
         break;
       }
       case 1: {
-        console.log(this.about)
         this.about = true
         this.main = false;
         this.certificate = false;
+        this.experience = false;
+        this.contact = false;
+
         break;
       }
       case 2: {
-        console.log(this.about)
+        this.load()
         this.certificate = true;
         this.about = false;
         this.main = false;
+        this.experience = false;
+        this.contact = false;
 
+
+        break;
+      }
+      case 3: {
+        this.experience = true;
+        this.about = false;
+        this.main = false;
+        this.certificate = false;
+        this.contact = false;
+
+
+        break;
+      }
+      case 4:{
+        this.contact = true;
+        this.experience = false;
+        this.about = false;
+        this.main = false;
+        this.certificate = false;
         break;
       }
     }
@@ -48,5 +75,12 @@ export class AppComponent {
       if (x !== data) { }
     })
 
+  }
+
+  load(){
+    this.Loading=true;
+    setTimeout(()=>{
+      this.Loading = false;
+    },7000)
   }
 }
