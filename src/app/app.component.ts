@@ -81,7 +81,7 @@ export class AppComponent {
     this.Loading=true;
     setTimeout(()=>{
       this.Loading = false;
-    },7000)
+    },13000)
   }
   redirectToln() {
     window.open('https://www.linkedin.com/in/ganesh-arulmozhivarman', '_blank');
