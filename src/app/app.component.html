@@ -34,13 +34,15 @@
             <h4>Software Engineer</h4>
 
             <div class="btn">
-                <button type="submit">Download CV</button>
-                <button type="submit" class="btn-2">Connect</button>
+                <button type="submit" (click)="redirectTocv()">Download CV</button>
+                <button type="submit" class="btn-2" (click)="redirectToln()">Connect</button>
             </div>
 
             <div class="social">
+                <!-- <i class='bx bxl-instagram'></i> -->
                 <a href="https://github.com/Ganesharulmozhivarman" target="_blank"><i class='bx bxl-github'></i></a>
-                <i class='bx bxl-instagram'></i>
+                <a href="https://www.linkedin.com/in/ganesh-arulmozhivarman" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                
             </div>
             <div class="social">
                 <i class='bx bxl-angular'></i>
@@ -126,10 +128,11 @@
                 <img src="https://i.ibb.co/X4jmfV3/Indium-Software-Logo.webp" height="200px" width="200px"
                     alt="Indium-Software-Logo">
             </div>
-            <div>
+            <div style="width: 50%;">
                 <h3 style="font-weight: bold">Indium Software - Associate Software Developer - (1.6 yrs + / Current)</h3>
                 <h4>Role and Responsibility</h4>
                 <ul>
+                    <li><b>Environment :</b> HTML/SCSS, Typescript, Angular v14,Javascript,Angular Material, Rxjs,Rest API, C# WebAPI, Mysql, FlexLayout Module</li>
                     <li>Design and develop user interfaces using the Angular framework</li>
                     <li>Debugged software, identified root causes, and proposed solutions to software issues</li>
 
@@ -149,7 +152,7 @@
                 <img src="https://i.ibb.co/XxthrwS/4d-global-medical-billing-services.webp" height="200px" width="200px"
                     alt="4d-global-medical-billing-services">
             </div>
-            <div>
+            <div  style="width: 50%;">
                 <h3 style="font-weight: bold">4D Global - AR Analyst & Caller (0.8 yrs)</h3>
                 <h4>Role and Responsibility</h4>
                 <ul>
@@ -162,26 +165,7 @@
                 </ul>
             </div>
         </div>
-        <div class="mini_exp" fxLayout="row" fxLayout.lt-sm="column" style="width: 90%;">
-            <div style="width: 50%;display: flex;place-content:center;margin-top: 30px;">
-                <!-- <img src="https://i.ibb.co/X4jmfV3/Indium-Software-Logo.webp" height="200px" width="200px" alt="Indium-Software-Logo"> -->
-                <img src="https://i.ibb.co/XxthrwS/4d-global-medical-billing-services.webp" height="200px" width="200px"
-                    alt="4d-global-medical-billing-services">
-            </div>
-            <div>
-                <h3 style="font-weight: bold">4D Global - AR Analyst & Caller</h3>
-                <h4>Role and Responsibility</h4>
-                <ul>
-                    <li>Created reports and documents as requested by the office manager</li>
-                    <li>Executing Queries if Needed and Allocate the Claims to the Team Members</li>
-                    <li>Handled customer complaints calmly and professionally, resolving customer issues in a timely
-                        manner</li>
-                    <li>Support Team on Debugging the Issue From the Claims</li>
-
-                </ul>
-            </div>
-        </div>
-
+        
     </mat-card>
 
     <div class="contact" *ngIf='contact'>
