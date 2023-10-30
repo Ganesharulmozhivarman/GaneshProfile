@@ -87,6 +87,6 @@ export class AppComponent {
     window.open('https://www.linkedin.com/in/ganesh-arulmozhivarman', '_blank');
   }
   redirectTocv() {
-    window.open('https://drive.google.com/file/d/1PVyF9F_a4jksWLUQyUsHniQHuKDyxYcO/view?usp=share_link', '_blank');
+    window.open('https://drive.google.com/file/d/1PVyF9F_a4jksWLUQyUsHniQHuKDyxYcO/view?usp=drive_link', '_blank');
   }
 }

@@ -1,204 +1,204 @@
 <div class="hero">
-    <div class="nav">
-        <div class="logo">
-            <h2 style="cursor: pointer;" (click)="redirect(0)">Ganesh Arulmozhivarman</h2>
-        </div>
-        <div class="link" fxHide.lt-sm=true>
-            <ul>
-                <li><a href="#" class="active" (click)="redirect(1)">About</a></li>
-                <li><a href="#" (click)="redirect(2)">Certificates</a></li>
-                <li><a href="#" (click)="redirect(3)">Experience</a></li>
-                <li><a href="#" (click)="redirect(4)">Contact</a></li>
-            </ul>
-        </div>
-        <div fxHide.gt-xs=true>
-            <button mat-button [matMenuTriggerFor]="menu"><i class='bx bx-menu'></i></button>
-            <mat-menu #menu="matMenu" class="menuitem">
+  <div class="nav">
+      <div class="logo">
+          <h2 style="cursor: pointer;" (click)="redirect(0)">Ganesh Arulmozhivarman</h2>
+      </div>
+      <div class="link" fxHide.lt-sm=true>
+          <ul>
+              <li><a href="#" class="active" (click)="redirect(1)">About</a></li>
+              <li><a href="#" (click)="redirect(2)">Certificates</a></li>
+              <li><a href="#" (click)="redirect(3)">Experience</a></li>
+              <li><a href="#" (click)="redirect(4)">Contact</a></li>
+          </ul>
+      </div>
+      <div fxHide.gt-xs=true>
+          <button mat-button [matMenuTriggerFor]="menu"><i class='bx bx-menu'></i></button>
+          <mat-menu #menu="matMenu" class="menuitem">
 
-                <button mat-menu-item><a href="#" (click)="redirect(1)" class="matbutton"> About </a></button>
-                <button mat-menu-item><a href="#" (click)="redirect(2)" class="matbutton"> Work</a></button>
-                <button mat-menu-item><a href="#" (click)="redirect(3)" class="matbutton"> Experience</a></button>
-                <button mat-menu-item><a href="#" (click)="redirect(4)" class="matbutton"> Contact</a></button>
+              <button mat-menu-item><a href="#" (click)="redirect(1)" class="matbutton"> About </a></button>
+              <button mat-menu-item><a href="#" (click)="redirect(2)" class="matbutton"> Work</a></button>
+              <button mat-menu-item><a href="#" (click)="redirect(3)" class="matbutton"> Experience</a></button>
+              <button mat-menu-item><a href="#" (click)="redirect(4)" class="matbutton"> Contact</a></button>
 
-            </mat-menu>
-        </div>
+          </mat-menu>
+      </div>
 
-    </div>
+  </div>
 
-    <div class="main" fxLayout.lt-sm="column" *ngIf='main'>
-        <img src="../assets/profile1.png" alt="men" class="men">
-        <div class="main-detil">
-            <p>Hello i'm</p>
-            <h1 class="my-class" fxHide.lt-sm=true>Ganesh Arulmozhivarman</h1>
-            <h1 class="my-class1" fxHide.gt-xs=true>Ganesh Arulmozhivarman</h1>
-            <h4>Software Engineer</h4>
+  <div class="main" fxLayout.lt-sm="column" *ngIf='main'>
+      <img src="../assets/profile1.png" alt="men" class="men">
+      <div class="main-detil">
+          <p>Hello i'm</p>
+          <h1 class="my-class" fxHide.lt-sm=true>Ganesh Arulmozhivarman</h1>
+          <h1 class="my-class1" fxHide.gt-xs=true>Ganesh Arulmozhivarman</h1>
+          <h4>Software Engineer</h4>
 
-            <div class="btn">
-                <button type="submit" (click)="redirectTocv()">Download CV</button>
-                <button type="submit" class="btn-2" (click)="redirectToln()">Connect</button>
-            </div>
+          <div class="btn">
+              <button type="submit" (click)="redirectTocv()">Download CV</button>
+              <button type="submit" class="btn-2" (click)="redirectToln()">Connect</button>
+          </div>
 
-            <div class="social">
-                <!-- <i class='bx bxl-instagram'></i> -->
-                <a href="https://github.com/Ganesharulmozhivarman" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/ganesh-arulmozhivarman" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                
-            </div>
-            <div class="social">
-                <i class='bx bxl-angular'></i>
-                <i class='bx bxl-typescript'></i>
-                <i class='bx bxl-javascript'></i>
-                <i class='bx bxl-html5'></i>
-                <i class='bx bxl-css3'></i>
-                <i class='bx bxl-netlify'></i>
-                <i >.NET</i>
-            </div>
-        </div>
-    </div>
+          <div class="social">
+              <!-- <i class='bx bxl-instagram'></i> -->
+              <a href="https://github.com/Ganesharulmozhivarman" target="_blank"><i class='bx bxl-github'></i></a>
+              <a href="https://www.linkedin.com/in/ganesh-arulmozhivarman" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+              
+          </div>
+          <div class="social">
+              <i class='bx bxl-angular'></i>
+              <i class='bx bxl-typescript'></i>
+              <i class='bx bxl-javascript'></i>
+              <i class='bx bxl-html5'></i>
+              <i class='bx bxl-css3'></i>
+              <i class='bx bxl-netlify'></i>
+              <i >.NET</i>
+          </div>
+      </div>
+  </div>
 
 
-    <div class="about" fxLayout="column" *ngIf='about'>
-        <div>
-            <h2>About Me</h2>
-        </div>
-        <div>
-            <img src="../assets/profile1.png" alt="men" class="abtpic">
-        </div>
-        <div style="width: 50%;">
-            <p style="text-align: justify;"> As an Angular Developer, I thrive on building cutting-edge user interfaces,
-                optimizing performance, and pushing the boundaries of modern web
-                development. Able to effectively self-manage during independent
-                projects, as well as collaborate as part of a productive team. Let's join
-                forces and take your digital experiences to the next level!"</p>
-            <!-- <h1 class="my-class" fxHide.lt-sm=true>Ganesh Arulmozhivarman</h1>
-            <h1 class="my-class1" fxHide.gt-xs=true>Ganesh Arulmozhivarman</h1>
-            <h4>Software Engineer</h4> -->
+  <div class="about" fxLayout="column" *ngIf='about'>
+      <div>
+          <h2>About Me</h2>
+      </div>
+      <div>
+          <img src="../assets/profile1.png" alt="men" class="abtpic">
+      </div>
+      <div style="width: 50%;">
+          <p style="text-align: justify;"> As an Angular Developer, I thrive on building cutting-edge user interfaces,
+              optimizing performance, and pushing the boundaries of modern web
+              development. Able to effectively self-manage during independent
+              projects, as well as collaborate as part of a productive team. Let's join
+              forces and take your digital experiences to the next level!"</p>
+          <!-- <h1 class="my-class" fxHide.lt-sm=true>Ganesh Arulmozhivarman</h1>
+          <h1 class="my-class1" fxHide.gt-xs=true>Ganesh Arulmozhivarman</h1>
+          <h4>Software Engineer</h4> -->
 
-            <!-- <div class="btn">
-                <button type="submit">Download CV</button>
-                <button type="submit" class="btn-2">Hire Me</button>
-            </div>
+          <!-- <div class="btn">
+              <button type="submit">Download CV</button>
+              <button type="submit" class="btn-2">Hire Me</button>
+          </div>
 
-            <div class="social">
-                <i class='bx bxl-github'></i>
-                <i class='bx bxl-instagram'></i>
-            </div>
-            <div class="social">
-                <i class='bx bxl-angular'></i>
-                <i class='bx bxl-typescript'></i>
-                <i class='bx bxl-javascript'></i>
-                <i class='bx bxl-html5'></i>
-                <i class='bx bxl-css3'></i>
-                <i class='bx bxl-instagram'></i>
-            </div> -->
-        </div>
-        <div style="width: 50%;text-align: center;">
-            <h4> Skills </h4>
-            <ul>
-                <p>✅Angular</p>
-                <p>✅Typescript</p>
-                <p>✅Javascript</p>
-                <p>✅HTML / CSS</p>
-                <p>✅Library - Rxjs</p>
-                <p>✅UI Library - Angular Material</p>
-                <p>✅Backend - .NET c# MVC,WEB API </p>
-                <p>✅mySQL</p>
-            </ul>
-        </div>
-    </div>
+          <div class="social">
+              <i class='bx bxl-github'></i>
+              <i class='bx bxl-instagram'></i>
+          </div>
+          <div class="social">
+              <i class='bx bxl-angular'></i>
+              <i class='bx bxl-typescript'></i>
+              <i class='bx bxl-javascript'></i>
+              <i class='bx bxl-html5'></i>
+              <i class='bx bxl-css3'></i>
+              <i class='bx bxl-instagram'></i>
+          </div> -->
+      </div>
+      <div style="width: 50%;text-align: center;">
+          <h4> Skills </h4>
+          <ul>
+              <p>✅Angular</p>
+              <p>✅Typescript</p>
+              <p>✅Javascript</p>
+              <p>✅HTML / CSS</p>
+              <p>✅Library - Rxjs</p>
+              <p>✅UI Library - Angular Material</p>
+              <p>✅Backend - .NET c# MVC,WEB API </p>
+              <p>✅mySQL</p>
+          </ul>
+      </div>
+  </div>
 
-    <div class="certificate" *ngIf='certificate'>
-        <p *ngIf="Loading">Please Wait Certificates are Getting Loaded ...... </p>
-        <img src="https://i.ibb.co/8jZK536/UC-cad4d380-2d98-4e2a-9de5-5adfe505463a.jpg"
-            alt="UC-cad4d380-2d98-4e2a-9de5-5adfe505463a" class="cert_img">
-        <img src="https://i.ibb.co/Qc14tLF/Guvi-Certification-N1ae9744560218f-Zm-S.png" alt="angular certificate"
-            class="cert_img">
-        <img src="https://i.ibb.co/q035nnt/UC-983c067a-36f9-44b9-af34-d719264db808.jpg"
-            alt="UC-983c067a-36f9-44b9-af34-d719264db808" class="cert_img">
-        <img src="https://i.ibb.co/8Kk8vN5/UC-4de2289e-1439-41ff-93ea-458735a9b2ea.jpg"
-            alt="UC-4de2289e-1439-41ff-93ea-458735a9b2ea" class="cert_img">
-        <img src="https://i.ibb.co/nrGMjRb/UC-089f7a65-5479-4b0d-bf70-6dadc055739d.jpg"
-            alt="UC-089f7a65-5479-4b0d-bf70-6dadc055739d" class="cert_img">
-        <img src="https://i.ibb.co/85KSHgL/image.png" class="cert_img">
-    </div>
+  <div class="certificate" *ngIf='certificate'>
+      <p *ngIf="Loading">Please Wait Certificates are Getting Loaded ...... </p>
+      <img src="https://i.ibb.co/8jZK536/UC-cad4d380-2d98-4e2a-9de5-5adfe505463a.jpg"
+          alt="UC-cad4d380-2d98-4e2a-9de5-5adfe505463a" class="cert_img">
+      <img src="https://i.ibb.co/Qc14tLF/Guvi-Certification-N1ae9744560218f-Zm-S.png" alt="angular certificate"
+          class="cert_img">
+      <img src="https://i.ibb.co/q035nnt/UC-983c067a-36f9-44b9-af34-d719264db808.jpg"
+          alt="UC-983c067a-36f9-44b9-af34-d719264db808" class="cert_img">
+      <img src="https://i.ibb.co/8Kk8vN5/UC-4de2289e-1439-41ff-93ea-458735a9b2ea.jpg"
+          alt="UC-4de2289e-1439-41ff-93ea-458735a9b2ea" class="cert_img">
+      <img src="https://i.ibb.co/nrGMjRb/UC-089f7a65-5479-4b0d-bf70-6dadc055739d.jpg"
+          alt="UC-089f7a65-5479-4b0d-bf70-6dadc055739d" class="cert_img">
+      <img src="https://i.ibb.co/85KSHgL/image.png" class="cert_img">
+  </div>
 
-    <mat-card class="experience" fxLayout="column" fxLayoutGap="20px" *ngIf='experience'>
-        <div class="mini_exp" fxLayout="row" fxLayout.lt-sm="column" style="width: 90%;">
-            <div style="width: 50%;display: flex;place-content:center;margin-top: 30px;" ngStyle.lt-sm="width:100%">
-                <img src="https://i.ibb.co/X4jmfV3/Indium-Software-Logo.webp" height="200px" width="200px"
-                    alt="Indium-Software-Logo">
-            </div>
-            <div style="width: 50%;text-align: justify;" ngStyle.lt-sm="width:100%">
-                <h3 style="font-weight: bold">Indium Software - Associate Software Developer - (1.6 yrs + / Current)</h3>
-                <h4>Role and Responsibility</h4>
-                <ul>
-                    <li><b>Environment :</b> HTML/SCSS, Typescript, Angular v14,Javascript,Angular Material, Rxjs,Rest API, C# WebAPI, Mysql, FlexLayout Module</li>
-                    <li>Design and develop user interfaces using the Angular framework</li>
-                    <li>Debugged software, identified root causes, and proposed solutions to software issues</li>
+  <mat-card class="experience" fxLayout="column" fxLayoutGap="20px" *ngIf='experience'>
+      <div class="mini_exp" fxLayout="row" fxLayout.lt-sm="column" style="width: 90%;">
+          <div style="width: 50%;display: flex;place-content:center;margin-top: 30px;" ngStyle.lt-sm="width:100%">
+              <img src="https://i.ibb.co/X4jmfV3/Indium-Software-Logo.webp" height="200px" width="200px"
+                  alt="Indium-Software-Logo">
+          </div>
+          <div style="width: 50%;text-align: justify;" ngStyle.lt-sm="width:100%">
+              <h3 style="font-weight: bold">Indium Software - Associate Software Developer - (1.7 yrs + / Current)</h3>
+              <h4>Role and Responsibility</h4>
+              <ul>
+                  <li><b>Environment :</b> HTML/SCSS, Typescript, Angular v14,Javascript,Angular Material, Rxjs,Rest API, C# WebAPI, Mysql, FlexLayout Module</li>
+                  <li>Design and develop user interfaces using the Angular framework</li>
+                  <li>Debugged software, identified root causes, and proposed solutions to software issues</li>
 
-                    <li>Developed a modular, single-page web application in Angular that incorporated responsive design
-                    </li>
-                    <li>principles</li>
+                  <li>Developed a modular, single-page web application in Angular that incorporated responsive design
+                  </li>
+                  <li>principles</li>
 
-                    <li>Build reusable UI components and libraries</li>
-                    <li>Optimize the performance of web applications</li>
-                    <li>Developed custom services to manage application state and communicate with back-end APIs</li>
-                </ul>
-            </div>
-        </div>
-        <div class="mini_exp" fxLayout="row" fxLayout.lt-sm="column" style="width: 90%;">
-            <div style="width: 50%;display: flex;place-content:center;margin-top: 30px;" ngStyle.lt-sm="width:100%">
-                <!-- <img src="https://i.ibb.co/X4jmfV3/Indium-Software-Logo.webp" height="200px" width="200px" alt="Indium-Software-Logo"> -->
-                <img src="https://i.ibb.co/XxthrwS/4d-global-medical-billing-services.webp" height="200px" width="200px"
-                    alt="4d-global-medical-billing-services">
-            </div>
-            <div  style="width: 50%;text-align: justify;" ngStyle.lt-sm="width:100%">
-                <h3 style="font-weight: bold">4D Global - AR Analyst & Caller (0.8 yrs)</h3>
-                <h4>Role and Responsibility</h4>
-                <ul>
-                    <li>Created reports and documents as requested by the office manager</li>
-                    <li>Executing Queries if Needed and Allocate the Claims to the Team Members</li>
-                    <li>Handled customer complaints calmly and professionally, resolving customer issues in a timely
-                        manner</li>
-                    <li>Support Team on Debugging the Issue From the Claims</li>
+                  <li>Build reusable UI components and libraries</li>
+                  <li>Optimize the performance of web applications</li>
+                  <li>Developed custom services to manage application state and communicate with back-end APIs</li>
+              </ul>
+          </div>
+      </div>
+      <div class="mini_exp" fxLayout="row" fxLayout.lt-sm="column" style="width: 90%;">
+          <div style="width: 50%;display: flex;place-content:center;margin-top: 30px;" ngStyle.lt-sm="width:100%">
+              <!-- <img src="https://i.ibb.co/X4jmfV3/Indium-Software-Logo.webp" height="200px" width="200px" alt="Indium-Software-Logo"> -->
+              <img src="https://i.ibb.co/XxthrwS/4d-global-medical-billing-services.webp" height="200px" width="200px"
+                  alt="4d-global-medical-billing-services">
+          </div>
+          <div  style="width: 50%;text-align: justify;" ngStyle.lt-sm="width:100%">
+              <h3 style="font-weight: bold">4D Global - AR Analyst & Caller (0.8 yrs)</h3>
+              <h4>Role and Responsibility</h4>
+              <ul>
+                  <li>Created reports and documents as requested by the office manager</li>
+                  <li>Executing Queries if Needed and Allocate the Claims to the Team Members</li>
+                  <li>Handled customer complaints calmly and professionally, resolving customer issues in a timely
+                      manner</li>
+                  <li>Support Team on Debugging the Issue From the Claims</li>
 
-                </ul>
-            </div>
-        </div>
-        
-    </mat-card>
+              </ul>
+          </div>
+      </div>
+      
+  </mat-card>
 
-    <div class="contact" *ngIf='contact'>
-        <table class="table_main">
-            <tr>
-                <td style="width: 20%;"><i class='bx bxs-location-plus' ></i> Photo</td>
-                <td> <img src="../assets/001.jpg" width="100px" height="100px" style="border: solid 1px black;" alt="Ganesh Arulmozhivarman" class="men"></td>
-            </tr>
-            <tr>
-                <td style="width: 20%;"><i class='bx bxs-location-plus' ></i> Location</td>
-                <td>TamilNadu chennai,600053 INDIA</td>
-            </tr>
-            <tr>
-                <td style="width: 20%;"><i class='bx bxs-phone-outgoing' ></i>Mobile No</td>
-                <td>+91 9566240259</td>
-            </tr>
-            <tr>
-                <td style="width: 20%;"><i class='bx bxs-envelope' ></i>Email Id</td>
-                <td>ganesha081197@gmail.com</td>
-            </tr>
-            <tr>
-                <td style="width: 20%;"><i class='bx bx-globe' ></i>Website</td>
-                <td><a href="https://ganesharulmozhivarman.netlify.app/"  target="_blank">Click Here(same Page)</a></td>
-            </tr>
-            <tr>
-                <td style="width: 20%;"><i class='bx bxl-whatsapp-square' ></i>Whats App</td>
-                <td> 9566240259 </td>
-            </tr>
-            <tr>
-                <td style="width: 20%;"><i class='bx bxl-github'></i>GitHub</td>
-                <td><a href="https://github.com/Ganesharulmozhivarman" target="_blank">Click Here(GITHUB)</a></td>
-            </tr>
-        </table>
-    </div>
+  <div class="contact" *ngIf='contact'>
+      <table class="table_main">
+          <tr>
+              <td style="width: 20%;"><i class='bx bxs-location-plus' ></i> Photo</td>
+              <td> <img src="../assets/001.jpg" width="100px" height="100px" style="border: solid 1px black;" alt="Ganesh Arulmozhivarman" class="men"></td>
+          </tr>
+          <tr>
+              <td style="width: 20%;"><i class='bx bxs-location-plus' ></i> Location</td>
+              <td>TamilNadu chennai,600053 INDIA</td>
+          </tr>
+          <tr>
+              <td style="width: 20%;"><i class='bx bxs-phone-outgoing' ></i>Mobile No</td>
+              <td>+91 9566240259</td>
+          </tr>
+          <tr>
+              <td style="width: 20%;"><i class='bx bxs-envelope' ></i>Email Id</td>
+              <td>ganesha081197@gmail.com</td>
+          </tr>
+          <tr>
+              <td style="width: 20%;"><i class='bx bx-globe' ></i>Website</td>
+              <td><a href="https://ganesharulmozhivarman.netlify.app/"  target="_blank">Click Here(same Page)</a></td>
+          </tr>
+          <tr>
+              <td style="width: 20%;"><i class='bx bxl-whatsapp-square' ></i>Whats App</td>
+              <td> 9566240259 </td>
+          </tr>
+          <tr>
+              <td style="width: 20%;"><i class='bx bxl-github'></i>GitHub</td>
+              <td><a href="https://github.com/Ganesharulmozhivarman" target="_blank">Click Here(GITHUB)</a></td>
+          </tr>
+      </table>
+  </div>
 
 </div>
